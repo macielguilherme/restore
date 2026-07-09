@@ -1,3 +1,6 @@
+
+
+<!-- saved from url=(0042)https://macielguilherme.github.io/restore/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><!--
  Page saved with SingleFile 
  url: https://doczhml.sosdocs.com.br/Docz/app/view_storage 
@@ -38,7 +41,7 @@
         }
     </style>
     <link rel="canonical" href="https://doczhml.sosdocs.com.br/Docz/app/view_storage">
-    <meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
+    <meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; font-src &#39;self&#39; data:; img-src &#39;self&#39; data:; style-src &#39;unsafe-inline&#39;; media-src &#39;self&#39; data:; script-src &#39;unsafe-inline&#39; data:; object-src &#39;self&#39; data:; frame-src &#39;self&#39; data:;">
 <style id="popup-backup-styles">
         /* BACKDROP */
         #popup-backdrop {
@@ -54,235 +57,7 @@
             z-index: 99999;
             backdrop-filter: blur(2px);
         }
-
-        /* MODAL */
-        .ui-dialog {
-            background: #585858;
-            padding: 5px;
-            border-radius: 6px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-            width: 940px;
-            max-width: 96vw;
-            max-height: 92vh;
-            animation: popupFadeIn 0.25s ease;
-        }
-
-        @keyframes popupFadeIn {
-            from { opacity: 0; transform: scale(0.95) translateY(-10px); }
-            to { opacity: 1; transform: scale(1) translateY(0); }
-        }
-
-        /* TITLE BAR */
-        .ui-dialog-titlebar {
-            height: 38px;
-            background: #efefef;
-            border-bottom: 1px solid #cdcdcd;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 12px;
-            border-radius: 4px 4px 0 0;
-        }
-        .ui-dialog-title {
-            font-size: 13px;
-            font-weight: bold;
-            color: #444;
-        }
-        .close-x {
-            text-decoration: none;
-            color: #666;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 2px 6px;
-        }
-        .close-x:hover { color: #c62828; }
-
-        /* CONTENT */
-        .ui-dialog-content {
-            background: #fafafa;
-            padding: 16px 18px;
-            max-height: 82vh;
-            overflow-y: auto;
-        }
-
-        /* SCOPE ALERT */
-        .scope-alert {
-            background: #fff9e6;
-            border: 1px solid #ffe0b3;
-            padding: 8px 14px;
-            font-size: 12px;
-            color: #b36b00;
-            margin-bottom: 16px;
-            border-radius: 3px;
-        }
-        .scope-alert strong { color: #995c00; }
-
-        /* VALIDATION ALERT */
-        .validation-alert {
-            background: #fff1f0;
-            border: 1px solid #9f352b;
-            border-left: 4px solid #9f352b;
-            padding: 8px 14px;
-            font-size: 12px;
-            color: #9f352b;
-            margin-bottom: 16px;
-            border-radius: 3px;
-        }
-        .validation-alert strong { color: #9f352b; }
-
-        .error-field {
-            border: 1px solid #9f352b !important;
-            background-color: #fff1f0 !important;
-        }
-
-        /* FORM SECTIONS */
-        .form-section {
-            border: 1px solid #cdcdcd;
-            background: #f9f9f9;
-            margin-bottom: 14px;
-            border-radius: 4px;
-        }
-        .section-title {
-            font-size: 12px;
-            font-weight: bold;
-            background: #efefef;
-            padding: 7px 12px;
-            border-bottom: 1px solid #cdcdcd;
-            color: #444;
-        }
-        .section-body {
-            padding: 14px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px 14px;
-        }
-        .col-2 { grid-column: span 2; }
-        .col-3 { grid-column: span 3; }
-        .col-4 { grid-column: span 4; }
-
-        /* FORM ELEMENTS */
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-        .form-group label {
-            font-size: 11px;
-            font-weight: bold;
-            color: #555;
-        }
-        .form-group label span.required {
-            color: #c62828;
-            margin-left: 2px;
-        }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            border: 1px solid #bdbdbd;
-            background: #fff;
-            font-size: 11px;
-            padding: 5px 8px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #444;
-            width: 100%;
-            height: 28px;
-            border-radius: 2px;
-        }
-        .form-group textarea {
-            height: 44px;
-            resize: vertical;
-        }
-        .form-group input:disabled,
-        .form-group select:disabled,
-        .form-group textarea:disabled {
-            background: #f0f0f0;
-            color: #888;
-            cursor: not-allowed;
-        }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            border-color: #4286ad;
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(66, 134, 173, 0.15);
-        }
-        .field-comment {
-            font-size: 10px;
-            color: #999;
-            margin-top: 2px;
-        }
-
-        /* BUTTONS */
-        .button-wrapper {
-            text-align: right;
-            border-top: 1px double #ccc;
-            padding-top: 14px;
-            margin-top: 6px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 8px;
-        }
-        .btn-docz {
-            font-size: 11px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            padding: 6px 22px;
-            border-radius: 3px;
-            color: #fff;
-            border: none;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 30px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.15s;
-        }
-        .btn-docz:hover { opacity: 0.88; }
-        .btn-docz:active { opacity: 0.75; }
-
-        .greenB { background: #599414; border: 1px solid #4a7a10; }
-        .redB { background: #9f352b; border: 1px solid #7a2a22; }
-        .greyB { background: #999; border: 1px solid #7a7a7a; color: #fff; }
-
-        /* SCROLLBAR */
-        .ui-dialog-content::-webkit-scrollbar {
-            width: 6px;
-        }
-        .ui-dialog-content::-webkit-scrollbar-track {
-            background: #eee;
-        }
-        .ui-dialog-content::-webkit-scrollbar-thumb {
-            background: #aaa;
-            border-radius: 4px;
-        }
-        .ui-dialog-content::-webkit-scrollbar-thumb:hover {
-            background: #888;
-        }
-
-        /* RESPONSIVIDADE */
-        @media (max-width: 768px) {
-            .section-body {
-                grid-template-columns: 1fr 1fr;
-            }
-            .col-2, .col-3 { grid-column: span 1; }
-            .ui-dialog { width: 98vw; }
-        }
-        @media (max-width: 480px) {
-            .section-body {
-                grid-template-columns: 1fr;
-            }
-            .button-wrapper {
-                flex-direction: column;
-            }
-            .button-wrapper .btn-docz {
-                width: 100%;
-            }
-        }
-    </style><meta id="dcngeagmmhegagicpcmpinaoklddcgon"><style id="popup-backup-styles">
-        /* BACKDROP */
-        #popup-backdrop {
+        #confirm-inactivate-backdrop {
             position: fixed;
             top: 0;
             left: 0;
@@ -292,7 +67,7 @@
             display: none;
             align-items: center;
             justify-content: center;
-            z-index: 99999;
+            z-index: 100000;
             backdrop-filter: blur(2px);
         }
 
@@ -486,6 +261,40 @@
         .greenB { background: #599414; border: 1px solid #4a7a10; }
         .redB { background: #9f352b; border: 1px solid #7a2a22; }
         .greyB { background: #999; border: 1px solid #7a7a7a; color: #fff; }
+        .btn-docz.hidden { display: none; }
+        .status-pill-grid {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: bold;
+            border: 1px solid transparent;
+            line-height: 1.2;
+        }
+        .status-pill-grid.success { background: #edf7e8; border-color: #b8d8aa; color: #4c812f; }
+        .status-pill-grid.fail { background: #fbebeb; border-color: #ddb5b5; color: #9f352b; }
+        .status-pill-grid.processing { background: #fff6de; border-color: #e5ca84; color: #9a7426; }
+        .status-pill-grid.inactive { background: #f1f1f1; border-color: #cecece; color: #777; }
+        .inactive-row {
+            opacity: 0.7;
+        }
+        .mode-note {
+            display: none;
+            margin-bottom: 14px;
+            background: #eef5fb;
+            border: 1px solid #c8dcee;
+            color: #46627c;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .confirm-text {
+            font-size: 12px;
+            line-height: 1.55;
+            color: #555;
+            white-space: pre-line;
+            margin: 0;
+        }
 
         /* SCROLLBAR */
         .ui-dialog-content::-webkit-scrollbar {
@@ -521,7 +330,7 @@
                 width: 100%;
             }
         }
-    </style></head>
+    </style><meta id="dcngeagmmhegagicpcmpinaoklddcgon"></head>
 
 <body><plasmo-csui></plasmo-csui>
     <style>
@@ -2374,6 +2183,14 @@
             overflow: hidden
         }
 
+        #backupPanelWidget.is-collapsed {
+            min-height: auto;
+        }
+
+        #backupPanelHeader {
+            user-select: none;
+        }
+
         .center-widgets {
             display: flex;
             justify-content: center;
@@ -2953,15 +2770,15 @@
 
 
 
-                <div class="widget widget-storage" style="margin-top:20px;">
-                    <div class="title opened inactive" style="cursor: pointer;">
+                <div id="backupPanelWidget" class="widget widget-storage is-collapsed" style="margin-top:20px;">
+                    <div id="backupPanelHeader" class="title opened inactive" style="cursor: pointer;" onclick="toggleBackupPanel()" role="button" aria-expanded="false" aria-controls="backupBody" tabindex="0">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNEIwNkM5N0NDMTVFMTExODE2QzlBMzIwQzYwOEVFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGNUU0RjBDNzFFQUUxMUUxQjkwNkU1NzdBMzlFNTM4OCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGNUU0RjBDNjFFQUUxMUUxQjkwNkU1NzdBMzlFNTM4OCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCRDk4RDVENEEzMUVFMTExQjQ4NUJEOUNGRTRDMjE3OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNEIwNkM5N0NDMTVFMTExODE2QzlBMzIwQzYwOEVFQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuySmo0AAAEZSURBVHjaYnz16hUnAwODFgMC3Hd2dn4HYuzdu9eYARPcBMp/YXz58uUjRkZGWSSJ70CsCsRzgNgDi8aPQCzDBCRk////z4CEOa9fvy736dMnbTRxGOZ/8uSJOBM2yffv37P//fuXGYdGhkePHnGwgBjYwD8gwCUHdM1vrBpBYuuAwNjY2Bpd7vHjx68mTZr0DKdGBweHV8BAe4Mup6ioeBVIfWFhwAEkJSUT2NnZVbBIue/YsaMLp43fv3/nYmNjw2ropUuXhHEGDiwEsYFv374x47QRn0aQOFkaQYAJGCcfkBX+/v3718OHD99+/vz5DbbI//nz5/erV6++Z9TV1c0HGiCIZNgvIJ4ExL5ArI7FMlBa7gcIMABqm/J4MPvVBAAAAABJRU5ErkJggg==" alt="" class="titleIcon">
                         <h6>Backup/Restore</h6>
                         <span style="float:right;font-size:11px;color:#878787;font-weight:normal;padding:9px 12px 8px 12px;">Registro
                             de evidências de operações executadas pela Infra</span>
                     </div>
 
-                    <div id="backupBody" style="padding:10px 15px 15px;display:block;">
+                    <div id="backupBody" style="padding:10px 15px 15px;display:none;">
                         <!-- Filtros simplificados -->
                         <div style="background:#f5f5f5;padding:15px;border-radius:3px;margin-bottom:15px;border:1px solid #e7e7e7;">
                             <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px;">
@@ -3051,10 +2868,12 @@
                                             Tamanho</th>
                                         <th style="padding:8px 10px;text-align:left;font-weight:bold;color:#666;white-space:nowrap;">
                                             Responsável</th>
+                                        <th style="padding:8px 10px;text-align:center;font-weight:bold;color:#666;white-space:nowrap;width:96px;">
+                                            Ações</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
+                                    <tr data-record-index="0" style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
                                         <td style="padding:8px 10px;border-right: black 144px;">08/07/2026 02:15</td>
                                         <td style="padding:8px 10px;">Backup</td>
                                         <td style="padding:8px 10px;">PNUD-PY</td>
@@ -3063,8 +2882,15 @@
                                         </td>
                                         <td style="padding:8px 10px;">1.2 TB</td>
                                         <td style="padding:8px 10px;">Bruno Infra</td>
+                                        <td style="padding:6px 10px;text-align:center;white-space:nowrap;">
+                                            <div style="display:flex;gap:4px;align-items:center;justify-content:center;">
+                                                <button type="button" title="Visualizar" aria-label="Visualizar" onclick="abrirPopupRegistro(0, 'view')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">☉</button>
+                                                <button type="button" title="Editar" aria-label="Editar" onclick="abrirPopupRegistro(0, 'edit')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">✎</button>
+                                                <button type="button" title="Excluir" aria-label="Excluir" onclick="confirmarInativacaoRegistro(0)" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">↯</button>
+                                            </div>
+                                        </td>
                                     </tr>
-                                    <tr style="border-bottom:1px solid #e7e7e7;background:#f5f5f5;">
+                                    <tr data-record-index="1" style="border-bottom:1px solid #e7e7e7;background:#f5f5f5;">
                                         <td style="padding:8px 10px;">07/07/2026 23:40</td>
                                         <td style="padding:8px 10px;">Backup</td>
                                         <td style="padding:8px 10px;">ABDI</td>
@@ -3072,8 +2898,15 @@
                                         <td style="padding:8px 10px;"><span style="/* color:#599414; *//* font-weight:bold; */">Sucesso</span></td>
                                         <td style="padding:8px 10px;">210 GB</td>
                                         <td style="padding:8px 10px;">Mariana Infra</td>
+                                        <td style="padding:6px 10px;text-align:center;white-space:nowrap;">
+                                            <div style="display:flex;gap:4px;align-items:center;justify-content:center;">
+                                                <button type="button" title="Visualizar" aria-label="Visualizar" onclick="abrirPopupRegistro(1, 'view')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">☉</button>
+                                                <button type="button" title="Editar" aria-label="Editar" onclick="abrirPopupRegistro(1, 'edit')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">✎</button>
+                                                <button type="button" title="Excluir" aria-label="Excluir" onclick="confirmarInativacaoRegistro(1)" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">↯</button>
+                                            </div>
+                                        </td>
                                     </tr>
-                                    <tr style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
+                                    <tr data-record-index="2" style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
                                         <td style="padding:8px 10px;">07/07/2026 18:20</td>
                                         <td style="padding:8px 10px;">Restore</td>
                                         <td style="padding:8px 10px;">ACNUR</td>
@@ -3082,8 +2915,15 @@
                                                 processamento</span></td>
                                         <td style="padding:8px 10px;">85 GB</td>
                                         <td style="padding:8px 10px;">Bruno Infra</td>
+                                        <td style="padding:6px 10px;text-align:center;white-space:nowrap;">
+                                            <div style="display:flex;gap:4px;align-items:center;justify-content:center;">
+                                                <button type="button" title="Visualizar" aria-label="Visualizar" onclick="abrirPopupRegistro(2, 'view')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">☉</button>
+                                                <button type="button" title="Editar" aria-label="Editar" onclick="abrirPopupRegistro(2, 'edit')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">✎</button>
+                                                <button type="button" title="Excluir" aria-label="Excluir" onclick="confirmarInativacaoRegistro(2)" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">↯</button>
+                                            </div>
+                                        </td>
                                     </tr>
-                                    <tr style="border-bottom:1px solid #e7e7e7;background:#f5f5f5;">
+                                    <tr data-record-index="3" style="border-bottom:1px solid #e7e7e7;background:#f5f5f5;">
                                         <td style="padding:8px 10px;">06/07/2026 21:05</td>
                                         <td style="padding:8px 10px;">Restore</td>
                                         <td style="padding:8px 10px;">PNUD-PY</td>
@@ -3091,8 +2931,15 @@
                                         <td style="padding:8px 10px;"><span style="/* color:#A73939; *//* font-weight:bold; */">Falha</span></td>
                                         <td style="padding:8px 10px;">—</td>
                                         <td style="padding:8px 10px;">Carlos Infra</td>
+                                        <td style="padding:6px 10px;text-align:center;white-space:nowrap;">
+                                            <div style="display:flex;gap:4px;align-items:center;justify-content:center;">
+                                                <button type="button" title="Visualizar" aria-label="Visualizar" onclick="abrirPopupRegistro(3, 'view')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">☉</button>
+                                                <button type="button" title="Editar" aria-label="Editar" onclick="abrirPopupRegistro(3, 'edit')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">✎</button>
+                                                <button type="button" title="Excluir" aria-label="Excluir" onclick="confirmarInativacaoRegistro(3)" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">↯</button>
+                                            </div>
+                                        </td>
                                     </tr>
-                                    <tr style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
+                                    <tr data-record-index="4" style="border-bottom:1px solid #e7e7e7;background:#fafafa;">
                                         <td style="padding:8px 10px;">05/07/2026 02:12</td>
                                         <td style="padding:8px 10px;">Backup</td>
                                         <td style="padding:8px 10px;">—</td>
@@ -3100,6 +2947,13 @@
                                         <td style="padding:8px 10px;"><span style="/* color:#599414; *//* font-weight:bold; */"> Sucesso</span></td>
                                         <td style="padding:8px 10px;">3.6 TB</td>
                                         <td style="padding:8px 10px;">Job Infra</td>
+                                        <td style="padding:6px 10px;text-align:center;white-space:nowrap;">
+                                            <div style="display:flex;gap:4px;align-items:center;justify-content:center;">
+                                                <button type="button" title="Visualizar" aria-label="Visualizar" onclick="abrirPopupRegistro(4, 'view')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">☉</button>
+                                                <button type="button" title="Editar" aria-label="Editar" onclick="abrirPopupRegistro(4, 'edit')" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">✎</button>
+                                                <button type="button" title="Excluir" aria-label="Excluir" onclick="confirmarInativacaoRegistro(4)" style="width:22px;height:20px;border:1px solid #bbb;background:linear-gradient(#fff,#e5e5e5);border-radius:2px;color:#555;font-weight:700;line-height:18px;cursor:pointer;padding:0;">↯</button>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -3743,12 +3597,13 @@
         <div class="ui-dialog">
             <!-- TITLE BAR -->
             <div class="ui-dialog-titlebar">
-                <span class="ui-dialog-title">Adicionar Registro de Restore</span>
+                <span id="popup-title" class="ui-dialog-title">Adicionar Registro de Restore</span>
                 <a href="javascript:void(0)" onclick="fecharPopupBackup()" class="close-x" title="Fechar (ESC)">✖</a>
             </div>
 
             <!-- CONTENT -->
             <div class="ui-dialog-content">
+                <div id="popup-mode-note" class="mode-note">Visualização do registro. Os campos estão bloqueados para edição.</div>
                 <form id="form-backup" onsubmit="salvarPopupBackup(event)">
 
                     <!-- SEÇÃO 1: DADOS DA OPERAÇÃO -->
@@ -3771,6 +3626,8 @@
                                 <select id="categoria" required>
                                     <option value="" selected disabled>Selecione...</option>
                                     <option value="Banco + Storage">Banco + Storage</option>
+                                    <option value="Banco de Dados">Banco de Dados</option>
+                                    <option value="Storage">Storage</option>
                                     <option value="Arquivos">Arquivos</option>
                                 </select>
                             </div>
@@ -3779,6 +3636,8 @@
                                 <select id="status" required>
                                     <option value="Falha" selected>Falha</option>
                                     <option value="Sucesso">Sucesso</option>
+                                    <option value="Em processamento">Em processamento</option>
+                                    <option value="Inativo">Inativo</option>
                                 </select>
                             </div>
 
@@ -3810,13 +3669,18 @@
                                 <select id="cliente">
                                     <option value="" selected disabled>Selecione...</option>
                                     <option value="PNUD-PY">PNUD-PY</option>
+                                    <option value="ABDI">ABDI</option>
+                                    <option value="ACNUR">ACNUR</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label>Projeto</label>
                                 <select id="projeto">
                                     <option value="" selected disabled>Selecione...</option>
+                                    <option value="PNUD">PNUD</option>
                                     <option value="PNUD - EXPEDIENTES">PNUD - EXPEDIENTES</option>
+                                    <option value="ABDI">ABDI</option>
+                                    <option value="ACNUR">ACNUR</option>
                                 </select>
                             </div>
                             <div class="form-group col-2">
@@ -3847,11 +3711,29 @@
 
                     <!-- BOTÕES -->
                     <div class="button-wrapper">
-                        <button type="button" class="btn-docz greyB" onclick="fecharPopupBackup()">Cancelar</button>
-                        <button type="submit" class="btn-docz greenB">Salvar Registro</button>
+                        <button id="popup-cancel-button" type="button" class="btn-docz greyB" onclick="fecharPopupBackup()">Cancelar</button>
+                        <button id="popup-save-button" type="submit" class="btn-docz greenB">Salvar Registro</button>
                     </div>
 
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirm-inactivate-backdrop" style="display:none;">
+        <div class="ui-dialog" style="width:640px;max-width:94vw;">
+            <div class="ui-dialog-titlebar">
+                <span class="ui-dialog-title">Confirmar Inativação</span>
+                <a href="javascript:void(0)" onclick="cancelarInativacaoRegistro()" class="close-x" title="Fechar">✖</a>
+            </div>
+            <div class="ui-dialog-content">
+                <p class="confirm-text">A exclusão física deste registro não é recomendada.
+Para manter a rastreabilidade da operação, o registro será apenas inativado e esta ação será registrada na Trilha de Auditoria.
+Deseja confirmar a inativação?</p>
+                <div class="button-wrapper">
+                    <button type="button" class="btn-docz redB" onclick="executarInativacaoRegistro()">Confirmar Inativação</button>
+                    <button type="button" class="btn-docz greyB" onclick="cancelarInativacaoRegistro()">Cancelar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -3865,84 +3747,474 @@
         // ============================================================
         // 4. FUNÇÕES GLOBAIS DO POPUP
         // ============================================================
+        var popupState = {
+            mode: 'create',
+            recordIndex: null,
+            pendingInactivateIndex: null,
+            escHandler: null
+        };
 
-        // ABRIR POPUP
-        window.abrirPopupBackup = function () {
-            var backdrop = document.getElementById('popup-backdrop');
+        var formFieldIds = [
+            'resp_tecnico',
+            'tipo_operacao',
+            'categoria',
+            'status',
+            'tipo_backup',
+            'data_execucao',
+            'data_conclusao',
+            'tamanho',
+            'cliente',
+            'projeto',
+            'id_backup',
+            'resultado_validacao',
+            'motivo',
+            'observacoes'
+        ];
+
+        var defaultRecord = {
+            responsavelTecnico: 'Equipe Infra',
+            tipoOperacao: 'Restore',
+            categoria: '',
+            status: 'Falha',
+            tipoBackup: 'Não se aplica para Restore',
+            dataExecucao: '',
+            dataConclusao: '',
+            tamanho: '',
+            cliente: '',
+            projeto: '',
+            idBackup: '',
+            resultadoValidacao: 'Não Validado',
+            motivo: '',
+            observacoes: '',
+            inativo: false
+        };
+
+        var registrosBackup = [
+            {
+                responsavelTecnico: 'Bruno Infra',
+                tipoOperacao: 'Backup',
+                categoria: 'Banco + Storage',
+                status: 'Sucesso',
+                tipoBackup: 'Incremental Diário',
+                dataExecucao: '08/07/2026 02:15',
+                dataConclusao: '08/07/2026 02:58',
+                tamanho: '1.2 TB',
+                cliente: 'PNUD-PY',
+                projeto: 'PNUD',
+                idBackup: 'BK-PRD-PNUD-20260708-0215',
+                resultadoValidacao: 'Validado',
+                motivo: 'Operação concluída com sucesso.',
+                observacoes: 'Backup incremental diário registrado conforme rotina da Infra.',
+                inativo: false
+            },
+            {
+                responsavelTecnico: 'Mariana Infra',
+                tipoOperacao: 'Backup',
+                categoria: 'Banco de Dados',
+                status: 'Sucesso',
+                tipoBackup: 'Incremental Diário',
+                dataExecucao: '07/07/2026 23:40',
+                dataConclusao: '08/07/2026 00:05',
+                tamanho: '210 GB',
+                cliente: 'ABDI',
+                projeto: 'ABDI',
+                idBackup: 'BK-PRD-ABDI-20260707-2340',
+                resultadoValidacao: 'Validado',
+                motivo: 'Operação concluída com sucesso.',
+                observacoes: 'Backup do banco principal finalizado sem intercorrências.',
+                inativo: false
+            },
+            {
+                responsavelTecnico: 'Bruno Infra',
+                tipoOperacao: 'Restore',
+                categoria: 'Storage',
+                status: 'Em processamento',
+                tipoBackup: 'Não se aplica para Restore',
+                dataExecucao: '07/07/2026 18:20',
+                dataConclusao: '',
+                tamanho: '85 GB',
+                cliente: 'ACNUR',
+                projeto: 'ACNUR',
+                idBackup: 'RS-HML-ACNUR-20260707-1820',
+                resultadoValidacao: 'Não Validado',
+                motivo: 'Restore ainda em execução.',
+                observacoes: 'Aguardando validação final da restauração.',
+                inativo: false
+            },
+            {
+                responsavelTecnico: 'Carlos Infra',
+                tipoOperacao: 'Restore',
+                categoria: 'Banco + Storage',
+                status: 'Falha',
+                tipoBackup: 'Não se aplica para Restore',
+                dataExecucao: '06/07/2026 21:05',
+                dataConclusao: '06/07/2026 21:24',
+                tamanho: '—',
+                cliente: 'PNUD-PY',
+                projeto: 'PNUD - EXPEDIENTES',
+                idBackup: 'RS-PRD-PNUD-20260706-2105',
+                resultadoValidacao: 'Não Validado',
+                motivo: 'Falha na etapa de validação do ponto de restauração.',
+                observacoes: 'Necessário reprocessar com novo snapshot.',
+                inativo: false
+            },
+            {
+                responsavelTecnico: 'Job Infra',
+                tipoOperacao: 'Backup',
+                categoria: 'Storage',
+                status: 'Sucesso',
+                tipoBackup: 'Incremental Diário',
+                dataExecucao: '05/07/2026 02:12',
+                dataConclusao: '05/07/2026 03:01',
+                tamanho: '3.6 TB',
+                cliente: '',
+                projeto: '',
+                idBackup: 'BK-ROT-DAILY-20260705-0212',
+                resultadoValidacao: 'Validado',
+                motivo: 'Operação concluída com sucesso.',
+                observacoes: 'Rotina diária sem vínculo com cliente/projeto específico.',
+                inativo: false
+            }
+        ];
+
+        function cloneData(data) {
+            return JSON.parse(JSON.stringify(data));
+        }
+
+        function getRecord(index) {
+            if (typeof index === 'number' && registrosBackup[index]) {
+                return cloneData(registrosBackup[index]);
+            }
+            return cloneData(defaultRecord);
+        }
+
+        function getField(id) {
+            return document.getElementById(id);
+        }
+
+        function setFieldValue(id, value) {
+            var field = getField(id);
+            if (!field) return;
+
+            var safeValue = value == null ? '' : value;
+            if (field.tagName === 'SELECT') {
+                field.value = safeValue;
+                if (field.value !== safeValue) {
+                    field.selectedIndex = 0;
+                }
+            } else {
+                field.value = safeValue;
+            }
+        }
+
+        function fillPopupForm(record) {
+            setFieldValue('resp_tecnico', record.responsavelTecnico);
+            setFieldValue('tipo_operacao', record.tipoOperacao);
+            setFieldValue('categoria', record.categoria);
+            setFieldValue('status', record.status);
+            setFieldValue('tipo_backup', record.tipoBackup);
+            setFieldValue('data_execucao', record.dataExecucao);
+            setFieldValue('data_conclusao', record.dataConclusao);
+            setFieldValue('tamanho', record.tamanho === '—' ? '' : record.tamanho);
+            setFieldValue('cliente', record.cliente);
+            setFieldValue('projeto', record.projeto);
+            setFieldValue('id_backup', record.idBackup);
+            setFieldValue('resultado_validacao', record.resultadoValidacao);
+            setFieldValue('motivo', record.motivo);
+            setFieldValue('observacoes', record.observacoes);
+            syncTipoBackupField();
+        }
+
+        function syncTipoBackupField() {
+            var tipoOp = getField('tipo_operacao');
+            var tipoBackup = getField('tipo_backup');
+            if (!tipoOp || !tipoBackup) return;
+
+            if (tipoOp.value === 'Restore') {
+                tipoBackup.value = 'Não se aplica para Restore';
+                tipoBackup.disabled = true;
+            } else {
+                if (!tipoBackup.value || tipoBackup.value === 'Não se aplica para Restore') {
+                    tipoBackup.value = 'Incremental Diário';
+                }
+                tipoBackup.disabled = popupState.mode === 'view';
+            }
+        }
+
+        function setPopupFieldsDisabled(disabled) {
+            formFieldIds.forEach(function (id) {
+                var field = getField(id);
+                if (field) field.disabled = disabled;
+            });
+
+            if (!disabled) {
+                syncTipoBackupField();
+            }
+        }
+
+        function configurePopupMode(mode, record) {
+            var title = getField('popup-title');
+            var note = getField('popup-mode-note');
+            var saveButton = getField('popup-save-button');
+            var cancelButton = getField('popup-cancel-button');
+
+            popupState.mode = mode;
+
+            if (title) {
+                if (mode === 'view') {
+                    title.textContent = 'Visualizar Registro de Backup/Restore';
+                } else if (mode === 'edit') {
+                    title.textContent = 'Editar Registro de Backup/Restore';
+                } else {
+                    title.textContent = 'Adicionar Registro de Restore';
+                }
+            }
+
+            if (note) {
+                note.style.display = mode === 'view' ? 'block' : 'none';
+            }
+
+            if (saveButton) {
+                if (mode === 'view') {
+                    saveButton.classList.add('hidden');
+                } else {
+                    saveButton.classList.remove('hidden');
+                    saveButton.textContent = mode === 'edit' ? 'Salvar Alterações' : 'Salvar Registro';
+                }
+            }
+
+            if (cancelButton) {
+                cancelButton.textContent = mode === 'view' ? 'Fechar' : 'Cancelar';
+            }
+
+            setPopupFieldsDisabled(mode === 'view');
+
+            if (record && record.inativo) {
+                setFieldValue('status', 'Inativo');
+                getField('status').disabled = true;
+            }
+        }
+
+        function removeEscHandler() {
+            if (popupState.escHandler) {
+                document.removeEventListener('keydown', popupState.escHandler);
+                popupState.escHandler = null;
+            }
+        }
+
+        function attachEscHandler() {
+            removeEscHandler();
+            popupState.escHandler = function (e) {
+                if (e.key !== 'Escape') return;
+
+                var confirmBackdrop = getField('confirm-inactivate-backdrop');
+                if (confirmBackdrop && confirmBackdrop.style.display === 'flex') {
+                    cancelarInativacaoRegistro();
+                    return;
+                }
+
+                fecharPopupBackup();
+            };
+            document.addEventListener('keydown', popupState.escHandler);
+        }
+
+        function openPopup(mode, index) {
+            var backdrop = getField('popup-backdrop');
+            var record = mode === 'create' ? cloneData(defaultRecord) : getRecord(index);
+
+            popupState.recordIndex = typeof index === 'number' ? index : null;
+            fillPopupForm(record);
+            configurePopupMode(mode, record);
+
             if (backdrop) {
                 backdrop.style.display = 'flex';
-                // Fecha com ESC
-                document.addEventListener('keydown', function handler(e) {
-                    if (e.key === 'Escape') {
-                        fecharPopupBackup();
-                        document.removeEventListener('keydown', handler);
-                    }
-                });
+                attachEscHandler();
+            }
+        }
+
+        function getStatusMarkup(status) {
+            var label = status || '';
+            var normalized = label.toLowerCase();
+            var cssClass = 'success';
+
+            if (normalized.indexOf('falha') !== -1) {
+                cssClass = 'fail';
+            } else if (normalized.indexOf('process') !== -1) {
+                cssClass = 'processing';
+            } else if (normalized.indexOf('inativ') !== -1) {
+                cssClass = 'inactive';
+            }
+
+            return '<span class="status-pill-grid ' + cssClass + '">' + label + '</span>';
+        }
+
+        function updateGridRow(index) {
+            var row = document.querySelector('tr[data-record-index="' + index + '"]');
+            var record = registrosBackup[index];
+            if (!row || !record) return;
+
+            var cells = row.getElementsByTagName('td');
+            if (cells.length < 7) return;
+
+            cells[0].textContent = record.dataExecucao || '—';
+            cells[1].textContent = record.tipoOperacao || '—';
+            cells[2].textContent = record.cliente || '—';
+            cells[3].textContent = record.projeto || '—';
+            cells[4].innerHTML = getStatusMarkup(record.inativo ? 'Inativo' : record.status);
+            cells[5].textContent = record.tamanho || '—';
+            cells[6].textContent = record.responsavelTecnico || '—';
+
+            if (record.inativo) {
+                row.classList.add('inactive-row');
+            } else {
+                row.classList.remove('inactive-row');
+            }
+        }
+
+        function collectFormData() {
+            return {
+                responsavelTecnico: getField('resp_tecnico').value.trim(),
+                tipoOperacao: getField('tipo_operacao').value,
+                categoria: getField('categoria').value,
+                status: getField('status').value,
+                tipoBackup: getField('tipo_backup').value,
+                dataExecucao: getField('data_execucao').value.trim(),
+                dataConclusao: getField('data_conclusao').value.trim(),
+                tamanho: getField('tamanho').value.trim(),
+                cliente: getField('cliente').value,
+                projeto: getField('projeto').value,
+                idBackup: getField('id_backup').value.trim(),
+                resultadoValidacao: getField('resultado_validacao').value,
+                motivo: getField('motivo').value.trim(),
+                observacoes: getField('observacoes').value.trim()
+            };
+        }
+
+        function setBackupPanelState(expanded) {
+            var widget = getField('backupPanelWidget');
+            var header = getField('backupPanelHeader');
+            var body = getField('backupBody');
+
+            if (!widget || !header || !body) return;
+
+            body.style.display = expanded ? 'block' : 'none';
+            header.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+
+            if (expanded) {
+                widget.classList.remove('is-collapsed');
+            } else {
+                widget.classList.add('is-collapsed');
+            }
+        }
+
+        window.toggleBackupPanel = function () {
+            var body = getField('backupBody');
+            if (!body) return;
+
+            setBackupPanelState(body.style.display === 'none');
+        };
+
+        window.abrirPopupBackup = function () {
+            openPopup('create');
+        };
+
+        window.abrirPopupRegistro = function (index, mode) {
+            openPopup(mode || 'view', index);
+        };
+
+        window.fecharPopupBackup = function (forceClose) {
+            var backdrop = getField('popup-backdrop');
+            if (!backdrop) return;
+
+            if (!forceClose && popupState.mode !== 'view') {
+                if (!confirm('Deseja realmente fechar o formulário? Dados não salvos serão perdidos.')) {
+                    return;
+                }
+            }
+
+            backdrop.style.display = 'none';
+            removeEscHandler();
+        };
+
+        window.confirmarInativacaoRegistro = function (index) {
+            popupState.pendingInactivateIndex = index;
+            var confirmBackdrop = getField('confirm-inactivate-backdrop');
+            if (confirmBackdrop) {
+                confirmBackdrop.style.display = 'flex';
             }
         };
 
-        // FECHAR POPUP
-        window.fecharPopupBackup = function () {
-            if (confirm('Deseja realmente fechar o formulário? Dados não salvos serão perdidos.')) {
-                var backdrop = document.getElementById('popup-backdrop');
-                if (backdrop) backdrop.style.display = 'none';
+        window.cancelarInativacaoRegistro = function () {
+            popupState.pendingInactivateIndex = null;
+            var confirmBackdrop = getField('confirm-inactivate-backdrop');
+            if (confirmBackdrop) {
+                confirmBackdrop.style.display = 'none';
             }
         };
 
-        // SALVAR REGISTRO
+        window.executarInativacaoRegistro = function () {
+            var index = popupState.pendingInactivateIndex;
+            if (typeof index !== 'number' || !registrosBackup[index]) {
+                cancelarInativacaoRegistro();
+                return;
+            }
+
+            registrosBackup[index].status = 'Inativo';
+            registrosBackup[index].inativo = true;
+            updateGridRow(index);
+            cancelarInativacaoRegistro();
+
+            if (popupState.recordIndex === index && getField('popup-backdrop').style.display === 'flex') {
+                fillPopupForm(getRecord(index));
+                configurePopupMode(popupState.mode, getRecord(index));
+            }
+
+            alert('Registro inativado com sucesso. A ação foi registrada na Trilha de Auditoria.');
+        };
+
         window.salvarPopupBackup = function (event) {
             event.preventDefault();
 
-            // Validação básica - campos obrigatórios
-            var tipoOp = document.getElementById('tipo_operacao').value;
-            var categoria = document.getElementById('categoria').value;
-            var status = document.getElementById('status').value;
-            var dataExec = document.getElementById('data_execucao').value.trim();
-            var idBackup = document.getElementById('id_backup').value.trim();
-            var respTec = document.getElementById('resp_tecnico').value.trim();
-            var motivo = document.getElementById('motivo').value.trim();
+            if (popupState.mode === 'view') {
+                return;
+            }
 
-            // Verifica campos obrigatórios
-            if (!tipoOp || !categoria || !status || !dataExec || !idBackup || !respTec) {
+            var dados = collectFormData();
+
+            if (!dados.tipoOperacao || !dados.categoria || !dados.status || !dados.dataExecucao || !dados.idBackup || !dados.responsavelTecnico) {
                 alert('⚠️ Preencha todos os campos obrigatórios (*).');
                 return;
             }
 
-            if (status === 'Falha' && !motivo) {
+            if (dados.status === 'Falha' && !dados.motivo) {
                 alert('⚠️ Para Status = Falha, informe o Motivo.');
-                document.getElementById('motivo').focus();
+                getField('motivo').focus();
                 return;
             }
 
-            // Coleta todos os dados
-            var dados = {
-                tipoOperacao: tipoOp,
-                categoria: categoria,
-                status: status,
-                tipoBackup: document.getElementById('tipo_backup').value || 'N/A',
-                dataExecucao: dataExec,
-                dataConclusao: document.getElementById('data_conclusao').value || 'N/A',
-                tamanho: document.getElementById('tamanho').value || 'N/A',
-                cliente: document.getElementById('cliente').value || 'N/A',
-                projeto: document.getElementById('projeto').value || 'N/A',
-                idBackup: idBackup,
-                resultadoValidacao: document.getElementById('resultado_validacao').value,
-                motivo: motivo || 'N/A',
-                observacoes: document.getElementById('observacoes').value || '',
-                responsavelTecnico: respTec
-            };
+            if (typeof popupState.recordIndex === 'number' && registrosBackup[popupState.recordIndex]) {
+                dados.inativo = registrosBackup[popupState.recordIndex].inativo;
+                if (dados.inativo) {
+                    dados.status = 'Inativo';
+                }
+                registrosBackup[popupState.recordIndex] = dados;
+                updateGridRow(popupState.recordIndex);
 
-            console.log('📦 Dados do registro:', dados);
+                alert('Registro atualizado com sucesso!\n\n' +
+                    'Tipo: ' + dados.tipoOperacao + '\n' +
+                    'Categoria: ' + dados.categoria + '\n' +
+                    'Status: ' + dados.status + '\n' +
+                    'ID: ' + dados.idBackup);
+            } else {
+                console.log('📦 Dados do novo registro:', dados);
+                alert('Registro de Restore salvo com sucesso!\n\n' +
+                    'Tipo: ' + dados.tipoOperacao + '\n' +
+                    'Categoria: ' + dados.categoria + '\n' +
+                    'Status: ' + dados.status + '\n' +
+                    'ID: ' + dados.idBackup);
+            }
 
-            // Simula salvamento
-            alert('Registro de Restore salvo com sucesso!\n\n' +
-                'Tipo: ' + dados.tipoOperacao + '\n' +
-                'Categoria: ' + dados.categoria + '\n' +
-                'Status: ' + dados.status + '\n' +
-                'ID: ' + dados.idBackup);
-
-            // Fecha o popup
-            document.getElementById('popup-backdrop').style.display = 'none';
+            fecharPopupBackup(true);
         };
 
         // ============================================================
@@ -3950,34 +4222,37 @@
         // ============================================================
 
         document.addEventListener('DOMContentLoaded', function () {
-            var tipoOp = document.getElementById('tipo_operacao');
-            var tipoBackup = document.getElementById('tipo_backup');
-
-            if (tipoOp && tipoBackup) {
+            var tipoOp = getField('tipo_operacao');
+            if (tipoOp) {
                 tipoOp.addEventListener('change', function () {
-                    if (this.value === 'Restore') {
-                        tipoBackup.value = 'Não se aplica para Restore';
-                        tipoBackup.disabled = true;
-                    } else {
-                        tipoBackup.disabled = false;
-                        tipoBackup.value = 'Incremental Diário';
+                    syncTipoBackupField();
+                });
+            }
+
+            var backupPanelHeader = getField('backupPanelHeader');
+            if (backupPanelHeader) {
+                backupPanelHeader.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        toggleBackupPanel();
                     }
                 });
             }
 
-            // Remove classe de erro ao digitar
-            var errorFields = document.querySelectorAll('.error-field');
-            errorFields.forEach(function (field) {
+            setBackupPanelState(false);
+
+            var formFields = document.querySelectorAll('#form-backup input, #form-backup select, #form-backup textarea');
+            formFields.forEach(function (field) {
                 field.addEventListener('input', function () {
-                    if (this.value.trim() !== '') {
-                        this.classList.remove('error-field');
-                    }
+                    this.classList.remove('error-field');
                 });
                 field.addEventListener('change', function () {
-                    if (this.value.trim() !== '') {
-                        this.classList.remove('error-field');
-                    }
+                    this.classList.remove('error-field');
                 });
+            });
+
+            registrosBackup.forEach(function (registro, index) {
+                updateGridRow(index);
             });
         });
 
@@ -3985,127 +4260,9 @@
         // 6. EXPÕE FUNÇÕES PARA USO EXTERNO
         // ============================================================
         console.log('Popup de Restore carregado com sucesso!');
-        console.log('Para abrir: abrirPopupBackup()');
-        console.log('Para fechar: fecharPopupBackup()');
+        console.log('Para abrir novo registro: abrirPopupBackup()');
+        console.log('Para visualizar/editar: abrirPopupRegistro(indice, modo)');
 
     })();
 </script>
-    <div id="popup-backdrop" style="display: none;">
-        <div class="ui-dialog">
-            <!-- TITLE BAR -->
-            <div class="ui-dialog-titlebar">
-                <span class="ui-dialog-title">Adicionar Registro de Restore</span>
-                <a href="javascript:void(0)" onclick="fecharPopupBackup()" class="close-x" title="Fechar (ESC)">✖</a>
-            </div>
-
-            <!-- CONTENT -->
-            <div class="ui-dialog-content">
-                <form id="form-backup" onsubmit="salvarPopupBackup(event)">
-
-                    <!-- SEÇÃO 1: DADOS DA OPERAÇÃO -->
-                    <div class="form-section">
-                        <div class="section-title">Dados da Operação</div>
-                        <div class="section-body">
-                            <div class="form-group">
-                                <label>Responsável Técnico<span class="required">*</span></label>
-                                <input type="text" id="resp_tecnico" value="Equipe Infra" required="">
-                            </div>
-                            <div class="form-group">
-                                <label>Tipo de Operação<span class="required">*</span></label>
-                                <select id="tipo_operacao" required="">
-                                    <option value="Restore" selected="">Restore</option>
-                                    <option value="Backup">Backup</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Categoria<span class="required">*</span></label>
-                                <select id="categoria" required="">
-                                    <option value="" selected="" disabled="">Selecione...</option>
-                                    <option value="Banco + Storage">Banco + Storage</option>
-                                    <option value="Arquivos">Arquivos</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Status<span class="required">*</span></label>
-                                <select id="status" required="">
-                                    <option value="Falha" selected="">Falha</option>
-                                    <option value="Sucesso">Sucesso</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-2">
-                                <label>Tipo de Backup</label>
-                                <input type="text" id="tipo_backup" value="Não se aplica para Restore" disabled="">
-                            </div>
-                            <div class="form-group">
-                                <label>Data/Hora da Execução<span class="required">*</span></label>
-                                <input type="text" id="data_execucao" value="" placeholder="DD/MM/AAAA HH:MM" required="">
-                            </div>
-                            <div class="form-group">
-                                <label>Data/Hora de Conclusão</label>
-                                <input type="text" id="data_conclusao" value="" placeholder="DD/MM/AAAA HH:MM">
-                            </div>
-                            <div class="form-group col-4">
-                                <label>Tamanho</label>
-                                <input type="text" id="tamanho" value="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SEÇÃO 2: ESCOPO E REFERÊNCIA TÉCNICA -->
-                    <div class="form-section">
-                        <div class="section-title">Escopo e Referência Técnica</div>
-                        <div class="section-body">
-                            <div class="form-group">
-                                <label>Cliente</label>
-                                <select id="cliente">
-                                    <option value="" selected="" disabled="">Selecione...</option>
-                                    <option value="PNUD-PY">PNUD-PY</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Projeto</label>
-                                <select id="projeto">
-                                    <option value="" selected="" disabled="">Selecione...</option>
-                                    <option value="PNUD - EXPEDIENTES">PNUD - EXPEDIENTES</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-2">
-                                <label>Identificador do Backup/Snapshot<span class="required">*</span></label>
-                                <input type="text" id="id_backup" value="" required="">
-                            </div>
-
-                            <div class="form-group col-2">
-                                <label>Resultado da Validação</label>
-                                <select id="resultado_validacao">
-                                    <option value="Não Validado" selected="">Não Validado</option>
-                                    <option value="Validado">Validado</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-4">
-                                <label>Motivo<span class="required">*</span></label>
-                                <textarea id="motivo" required=""></textarea>
-                                <span class="field-comment">Obrigatório para Status = Falha.</span>
-                            </div>
-
-                            <div class="form-group col-4">
-                                <label>Observações</label>
-                                <textarea id="observacoes"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BOTÕES -->
-                    <div class="button-wrapper">
-                        <button type="button" class="btn-docz greyB" onclick="fecharPopupBackup()">Cancelar</button>
-                        <button type="submit" class="btn-docz greenB">Salvar Registro</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
-    
-
 </body></html>
